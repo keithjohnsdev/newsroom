@@ -1,0 +1,13 @@
+.Toolbar {
+    margin-bottom: 80px;
+}
+
+.toolbarNav {
+    margin: 0 0.5vw;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: x-large;
+    padding-top: 9px;
+}

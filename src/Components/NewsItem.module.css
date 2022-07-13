@@ -1,0 +1,28 @@
+.NewsItem {
+  margin-bottom: 2rem;
+}
+
+.NewsItem img {
+  max-width: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  text-align: center;
+  box-shadow: 2px 3px 4px gray;
+  background-color: #f0f0f0;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");}
+
+.card:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 3px 4px rgb(35, 35, 35);
+}
+
+.title {
+  font-size: larger;
+  font-style: normal;
+  font-weight: 900;
+}
