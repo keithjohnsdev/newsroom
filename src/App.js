@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import "./App.css";
 import Toolbar from "./Components/Toolbar";
 import NewsFeed from "./Components/NewsFeed";
@@ -9,8 +8,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [articles, setArticles] = useState([]);
-  const [filterOn, setFilterOn] = useState(false);
-  const [filteredArticles, setFilteredArticles] = useState([]);
   const [query, setQuery] = useState("a");
   const [newspaper, setNewspaper] = useState("everything");
 
@@ -56,8 +53,7 @@ function App() {
   return (
     <div className="App">
       <Toolbar searchArticles={searchArticles} changeNewspaper={changeNewspaper} />
-      {!filterOn && <NewsFeed newspaper={newspaper} articles={articles} loading={loading} />}
-      {filterOn && <NewsFeed newspaper={newspaper} articles={filteredArticles} />}
+      <NewsFeed newspaper={newspaper} articles={articles} loading={loading} />
     </div>
   );
 }
